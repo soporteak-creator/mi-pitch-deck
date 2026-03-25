@@ -1,0 +1,117 @@
+{
+  "brand": "Verismart",
+  "tagline": "El seguro que sí entiende tu vida",
+  "description": "La app que revoluciona cómo los latinoamericanos contratan, gestionan y usan sus seguros — todo desde el celular, en minutos.",
+  "accent": "#00d4ff",
+  "kpis": [
+    {
+      "value": 18000000,
+      "suffix": "+",
+      "label": "Personas sin seguro en Chile",
+      "icon": "🌎",
+      "decimals": 0,
+      "displayValue": "18M"
+    },
+    {
+      "value": 3,
+      "suffix": " min",
+      "label": "Para contratar tu primer seguro",
+      "icon": "⚡",
+      "decimals": 0
+    },
+    {
+      "value": 97,
+      "suffix": "%",
+      "label": "Satisfacción en siniestros",
+      "icon": "⭐",
+      "decimals": 0
+    },
+    {
+      "value": 40,
+      "suffix": "%",
+      "label": "Más barato que canales tradicionales",
+      "icon": "💰",
+      "decimals": 0
+    }
+  ],
+  "growthData": {
+    "labels": ["Ene", "Feb", "Mar", "Abr", "May", "Jun", "Jul", "Ago", "Sep", "Oct", "Nov", "Dic"],
+    "downloads": [1200, 2400, 3900, 5800, 7200, 9100, 11500, 14200, 17800, 21300, 26000, 31500],
+    "polizas":   [400,  900,  1600, 2500, 3200, 4100, 5300,  6800,  8500,  10200, 12800, 15600]
+  },
+  "segments": [
+    {
+      "id": "joven",
+      "title": "El Joven Profesional",
+      "age": "23–35 años",
+      "icon": "🚀",
+      "pain": "Nunca tuvo seguro — parece caro, burocrático y aburrido.",
+      "solution": "Seguro de auto, bicicleta o renta en 3 clics. Sin papeles, sin llamadas.",
+      "features": ["Cotización instantánea con IA", "Pago mensual sin compromiso", "Gestión 100% en la app"]
+    },
+    {
+      "id": "familia",
+      "title": "La Familia Protegida",
+      "age": "35–50 años",
+      "icon": "👨‍👩‍👧",
+      "pain": "Tiene seguros dispersos en mil compañías, sin visión unificada.",
+      "solution": "Un solo lugar para todos los seguros del hogar. Dashboard familiar con alertas.",
+      "features": ["Wallet de pólizas unificado", "Alertas de vencimiento", "Cobertura para toda la familia"]
+    },
+    {
+      "id": "pyme",
+      "title": "La PYME que crece",
+      "age": "Negocios 5–50 personas",
+      "icon": "🏢",
+      "pain": "Los seguros empresariales son opacos, lentos y requieren corredor.",
+      "solution": "Plan empresarial autoservicio. Asegura a tu equipo y activos en el mismo día.",
+      "features": ["Seguro colectivo de salud", "Responsabilidad civil en minutos", "Factura electrónica integrada"]
+    }
+  ],
+  "products": [
+    { "name": "Auto",       "icon": "🚗", "time": "4 min", "price": "desde $18.990/mes" },
+    { "name": "Hogar",      "icon": "🏠", "time": "3 min", "price": "desde $9.990/mes" },
+    { "name": "Vida",       "icon": "❤️", "time": "5 min", "price": "desde $12.990/mes" },
+    { "name": "Salud",      "icon": "🏥", "time": "6 min", "price": "desde $29.990/mes" },
+    { "name": "Mascotas",   "icon": "🐾", "time": "2 min", "price": "desde $4.990/mes" },
+    { "name": "Viaje",      "icon": "✈️", "time": "2 min", "price": "desde $2.990/viaje" }
+  ],
+  "differentiators": [
+    {
+      "title": "IA que te recomienda",
+      "desc": "Nuestro motor de IA analiza tu perfil y sugiere el plan exacto que necesitas, sin sobrecoberturas.",
+      "icon": "🧠"
+    },
+    {
+      "title": "Siniestros en 24h",
+      "desc": "Reporta desde la app con fotos. Nuestro sistema procesa y aprueba el 80% de los siniestros en menos de 24 horas.",
+      "icon": "⚡"
+    },
+    {
+      "title": "Precio justo garantizado",
+      "desc": "Sin comisiones de corredor. Sin intermediarios. El ahorro llega directo a ti.",
+      "icon": "💎"
+    },
+    {
+      "title": "Todo tu portafolio",
+      "desc": "Importa pólizas existentes. Verismart las centraliza todas en un solo dashboard.",
+      "icon": "📊"
+    }
+  ],
+  "team": [
+    { "name": "Catalina Morales", "role": "CEO & Co-Fundadora", "bg": "Seguros BCI / Harvard MBA" },
+    { "name": "Andrés Fuentes",   "role": "CTO & Co-Fundador",  "bg": "Ex-Cornershop / Stanford CS" },
+    { "name": "Valentina Ríos",   "role": "CPO",                "bg": "Ex-Buk / Growth Product" },
+    { "name": "Felipe Donoso",    "role": "CFO",                "bg": "Ex-Betterfly / Fintech" }
+  ],
+  "raise": {
+    "amount": "USD 2.5M",
+    "stage": "Pre-Seed",
+    "use": [
+      { "label": "Producto & Tecnología", "pct": 40, "color": "#0066ff" },
+      { "label": "Crecimiento & Marketing", "pct": 30, "color": "#00d4ff" },
+      { "label": "Equipo", "pct": 20, "color": "#00e096" },
+      { "label": "Regulatorio & Legal", "pct": 10, "color": "#ffb347" }
+    ]
+  }
+}

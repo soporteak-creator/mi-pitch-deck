@@ -1,0 +1,856 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Verismart — El seguro que sí entiende tu vida</title>
+  <meta name="description" content="Verismart: la app que revoluciona cómo los latinoamericanos contratan y gestionan sus seguros." />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+
+  <!-- Shared styles -->
+  <link rel="stylesheet" href="../../shared/css/base.css" />
+  <!-- Brand theme -->
+  <link rel="stylesheet" href="css/theme.css" />
+</head>
+<body>
+
+  <!-- Progress bar -->
+  <div id="progress-bar"></div>
+
+  <!-- ── NAV ──────────────────────────────────────────────────── -->
+  <nav class="nav">
+    <div class="nav__logo">Veri<span>smart</span></div>
+    <ul class="nav__links">
+      <li><a href="#problem">Problema</a></li>
+      <li><a href="#solution">Solución</a></li>
+      <li><a href="#segments">Segmentos</a></li>
+      <li><a href="#products">Productos</a></li>
+      <li><a href="#kpis">Tracción</a></li>
+      <li><a href="#team">Equipo</a></li>
+      <li><a href="#raise">Levantamiento</a></li>
+    </ul>
+  </nav>
+
+  <!-- ══════════════════════════════════════════════════════════
+       01. HERO
+  ══════════════════════════════════════════════════════════ -->
+  <section id="hero" class="hero">
+    <div class="hero__bg">
+      <div class="hero__grid"></div>
+      <div class="hero__glow hero__glow--1"></div>
+      <div class="hero__glow hero__glow--2"></div>
+      <div class="hero__glow hero__glow--3"></div>
+    </div>
+
+    <div class="hero__content">
+      <div class="hero__text">
+        <div class="hero__badge">Pre-Seed · Insurtech · Chile 🇨🇱</div>
+
+        <h1 class="hero__title">
+          El seguro<br/>
+          que sí<br/>
+          <span class="line-accent">entiende</span><br/>
+          tu vida.
+        </h1>
+
+        <p class="hero__sub">
+          Contrata, gestiona y usa tus seguros en minutos desde el celular.
+          Sin papeles, sin corredores, sin complicaciones.
+        </p>
+
+        <div class="hero__actions">
+          <a href="#problem" class="btn btn--primary">
+            Ver la oportunidad
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 3l5 5-5 5M3 8h10"/></svg>
+          </a>
+          <a href="#closing" class="btn btn--ghost">Contáctanos</a>
+        </div>
+      </div>
+
+      <!-- Phone mockup -->
+      <div class="hero__phone phone-wrap">
+        <div class="phone">
+          <div class="phone__screen">
+            <!-- App UI simulado con CSS/HTML -->
+            <div style="padding:60px 16px 16px; height:100%; background:linear-gradient(180deg,#060810 0%,#08102a 100%); overflow:hidden; font-family:'DM Sans',sans-serif;">
+              <!-- Top bar -->
+              <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:20px;">
+                <div>
+                  <div style="font-size:11px;color:#6b7a99;font-family:'JetBrains Mono',monospace;">BUENOS DÍAS</div>
+                  <div style="font-size:16px;font-weight:700;color:#eef2fa;font-family:'Syne',sans-serif;">Catalina 👋</div>
+                </div>
+                <div style="width:36px;height:36px;border-radius:50%;background:linear-gradient(135deg,#0055ff,#00d4ff);display:flex;align-items:center;justify-content:center;font-size:14px;font-weight:700;color:#fff;font-family:'Syne',sans-serif;">C</div>
+              </div>
+
+              <!-- Balance card -->
+              <div style="background:linear-gradient(135deg,#0055ff,#00d4ff);border-radius:16px;padding:16px;margin-bottom:16px;">
+                <div style="font-size:10px;color:rgba(255,255,255,0.7);font-family:'JetBrains Mono',monospace;letter-spacing:0.08em;margin-bottom:6px;">COBERTURA TOTAL</div>
+                <div style="font-size:24px;font-weight:800;color:#fff;font-family:'Syne',sans-serif;letter-spacing:-0.02em;">$142.000 <span style="font-size:12px;opacity:0.7;">/mes</span></div>
+                <div style="display:flex;gap:8px;margin-top:12px;">
+                  <div style="background:rgba(255,255,255,0.15);border-radius:8px;padding:6px 10px;font-size:10px;color:#fff;">🚗 Auto</div>
+                  <div style="background:rgba(255,255,255,0.15);border-radius:8px;padding:6px 10px;font-size:10px;color:#fff;">🏠 Hogar</div>
+                  <div style="background:rgba(255,255,255,0.15);border-radius:8px;padding:6px 10px;font-size:10px;color:#fff;">❤️ Vida</div>
+                </div>
+              </div>
+
+              <!-- Quick actions -->
+              <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:16px;">
+                <div style="background:#0d1228;border:1px solid rgba(0,212,255,0.12);border-radius:12px;padding:12px;text-align:center;">
+                  <div style="font-size:20px;margin-bottom:4px;">⚡</div>
+                  <div style="font-size:10px;color:#eef2fa;font-weight:600;">Reportar</div>
+                  <div style="font-size:9px;color:#6b7a99;">Siniestro</div>
+                </div>
+                <div style="background:#0d1228;border:1px solid rgba(0,212,255,0.12);border-radius:12px;padding:12px;text-align:center;">
+                  <div style="font-size:20px;margin-bottom:4px;">➕</div>
+                  <div style="font-size:10px;color:#eef2fa;font-weight:600;">Agregar</div>
+                  <div style="font-size:9px;color:#6b7a99;">Seguro</div>
+                </div>
+              </div>
+
+              <!-- Recent activity -->
+              <div style="font-size:10px;color:#6b7a99;font-family:'JetBrains Mono',monospace;letter-spacing:0.08em;margin-bottom:10px;">ACTIVIDAD RECIENTE</div>
+              <div style="background:#0d1228;border:1px solid rgba(0,212,255,0.08);border-radius:10px;padding:10px;display:flex;align-items:center;gap:10px;margin-bottom:8px;">
+                <div style="width:32px;height:32px;background:rgba(0,232,162,0.1);border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:14px;">✅</div>
+                <div>
+                  <div style="font-size:11px;color:#eef2fa;font-weight:500;">Siniestro aprobado</div>
+                  <div style="font-size:10px;color:#6b7a99;">Auto · $340.000</div>
+                </div>
+                <div style="margin-left:auto;font-size:9px;color:#00e8a2;">+24h</div>
+              </div>
+              <div style="background:#0d1228;border:1px solid rgba(0,212,255,0.08);border-radius:10px;padding:10px;display:flex;align-items:center;gap:10px;">
+                <div style="width:32px;height:32px;background:rgba(0,85,255,0.1);border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:14px;">🔔</div>
+                <div>
+                  <div style="font-size:11px;color:#eef2fa;font-weight:500;">Renovación próxima</div>
+                  <div style="font-size:10px;color:#6b7a99;">Hogar · en 7 días</div>
+                </div>
+                <div style="margin-left:auto;font-size:9px;color:#ffba3b;">7d</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scroll hint -->
+    <div class="hero__scroll-hint">
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5">
+        <path d="M12 5v14M5 12l7 7 7-7" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      Scroll
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════════
+       02. PROBLEMA
+  ══════════════════════════════════════════════════════════ -->
+  <section id="problem" class="section section--dark">
+    <div class="container">
+      <div class="grid-2" style="gap:4rem;">
+        <div>
+          <div class="eyebrow">El problema</div>
+          <h2 class="display-text fade-up" style="font-size:clamp(2.5rem,5vw,4.5rem); margin-bottom:2rem;">
+            Los seguros<br/>están<br/><span class="gradient-text">rotos.</span>
+          </h2>
+
+          <div class="problem-lines" style="display:flex;flex-direction:column;gap:1rem;">
+            <div class="problem-line card" style="display:flex;gap:1rem;align-items:flex-start;padding:1.25rem 1.5rem;">
+              <span style="font-size:1.5rem;flex-shrink:0;margin-top:2px;">😤</span>
+              <div>
+                <div style="font-weight:600;margin-bottom:4px;color:var(--color-text);">Proceso burocrático y lento</div>
+                <div style="font-size:0.875rem;color:var(--color-text-muted);">Contratar un seguro toma días, requiere corredor y montañas de documentos.</div>
+              </div>
+            </div>
+            <div class="problem-line card" style="display:flex;gap:1rem;align-items:flex-start;padding:1.25rem 1.5rem;">
+              <span style="font-size:1.5rem;flex-shrink:0;margin-top:2px;">😵</span>
+              <div>
+                <div style="font-weight:600;margin-bottom:4px;color:var(--color-text);">Opacidad total en precios</div>
+                <div style="font-size:0.875rem;color:var(--color-text-muted);">Sin comparadores reales. El cliente no sabe si está pagando de más o de menos.</div>
+              </div>
+            </div>
+            <div class="problem-line card" style="display:flex;gap:1rem;align-items:flex-start;padding:1.25rem 1.5rem;">
+              <span style="font-size:1.5rem;flex-shrink:0;margin-top:2px;">🐌</span>
+              <div>
+                <div style="font-weight:600;margin-bottom:4px;color:var(--color-text);">Siniestros que duran semanas</div>
+                <div style="font-size:0.875rem;color:var(--color-text-muted);">El proceso de reclamo es agotador, poco transparente y lleno de fricción.</div>
+              </div>
+            </div>
+            <div class="problem-line card" style="display:flex;gap:1rem;align-items:flex-start;padding:1.25rem 1.5rem;">
+              <span style="font-size:1.5rem;flex-shrink:0;margin-top:2px;">📁</span>
+              <div>
+                <div style="font-weight:600;margin-bottom:4px;color:var(--color-text);">Pólizas dispersas y olvidadas</div>
+                <div style="font-size:0.875rem;color:var(--color-text-muted);">La familia promedio tiene 3+ seguros en compañías distintas, sin visión unificada.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Big stat -->
+        <div style="display:flex;flex-direction:column;justify-content:center;gap:2rem;">
+          <div class="highlight-box" style="text-align:center;padding:3rem 2rem;">
+            <div style="font-family:'JetBrains Mono',monospace;font-size:0.75rem;color:var(--color-accent);letter-spacing:0.12em;text-transform:uppercase;margin-bottom:1rem;">Penetración de seguros en Chile</div>
+            <div class="display-text gradient-text" style="font-size:7rem;line-height:1;">3.5%</div>
+            <div style="font-size:1rem;color:var(--color-text-muted);margin-top:1rem;">del PIB vs 8–12% en mercados maduros</div>
+          </div>
+
+          <div class="highlight-box" style="text-align:center;padding:2rem;">
+            <div style="font-family:'JetBrains Mono',monospace;font-size:0.75rem;color:var(--color-warning);letter-spacing:0.12em;text-transform:uppercase;margin-bottom:0.75rem;">Personas sin ningún seguro</div>
+            <div class="display-text" style="font-size:4.5rem;line-height:1;color:var(--color-warning);">+18M</div>
+            <div style="font-size:0.875rem;color:var(--color-text-muted);margin-top:0.5rem;">Solo en Chile. Latinoamérica: +400M de personas subcoberturadas.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════════
+       03. SOLUCIÓN
+  ══════════════════════════════════════════════════════════ -->
+  <section id="solution" class="section">
+    <div class="container">
+      <div style="text-align:center;margin-bottom:4rem;">
+        <div class="eyebrow fade-up">La solución</div>
+        <h2 class="display-text fade-up" style="font-size:clamp(2.5rem,5vw,4.5rem);margin-bottom:1.5rem;">
+          Seguros en<br/><span class="gradient-text">3 minutos.</span>
+        </h2>
+        <p class="lead fade-up" style="margin:0 auto;">
+          Verismart es la primera super-app de seguros para Latinoamérica.
+          Contrata, centraliza y gestiona todo tu portafolio desde un solo lugar.
+        </p>
+      </div>
+
+      <!-- How it works steps -->
+      <div class="stagger-group" style="display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;position:relative;">
+        <!-- Connector line -->
+        <div style="position:absolute;top:3.5rem;left:calc(16.66% + 1rem);right:calc(16.66% + 1rem);height:1px;background:linear-gradient(90deg,transparent,var(--color-accent),transparent);opacity:0.3;pointer-events:none;"></div>
+
+        <div class="stagger-item card" style="text-align:center;position:relative;">
+          <div style="width:56px;height:56px;border-radius:50%;background:linear-gradient(135deg,var(--color-accent-2),var(--color-accent));margin:0 auto 1.5rem;display:flex;align-items:center;justify-content:center;font-family:'Syne',sans-serif;font-weight:800;font-size:1.25rem;color:#fff;">1</div>
+          <h3 style="font-family:'Syne',sans-serif;font-weight:700;font-size:1.25rem;letter-spacing:-0.02em;margin-bottom:0.75rem;">Cuéntanos sobre ti</h3>
+          <p style="font-size:0.875rem;color:var(--color-text-muted);line-height:1.6;">Responde 5 preguntas. Nuestra IA analiza tu perfil y detecta exactamente qué cobertura necesitas.</p>
+        </div>
+
+        <div class="stagger-item card" style="text-align:center;position:relative;">
+          <div style="width:56px;height:56px;border-radius:50%;background:linear-gradient(135deg,var(--color-accent-2),var(--color-accent));margin:0 auto 1.5rem;display:flex;align-items:center;justify-content:center;font-family:'Syne',sans-serif;font-weight:800;font-size:1.25rem;color:#fff;">2</div>
+          <h3 style="font-family:'Syne',sans-serif;font-weight:700;font-size:1.25rem;letter-spacing:-0.02em;margin-bottom:0.75rem;">Elige tu plan</h3>
+          <p style="font-size:0.875rem;color:var(--color-text-muted);line-height:1.6;">Comparamos en tiempo real entre las mejores aseguradoras del país. Precio transparente, sin letra chica.</p>
+        </div>
+
+        <div class="stagger-item card" style="text-align:center;position:relative;">
+          <div style="width:56px;height:56px;border-radius:50%;background:linear-gradient(135deg,var(--color-accent-2),var(--color-accent));margin:0 auto 1.5rem;display:flex;align-items:center;justify-content:center;font-family:'Syne',sans-serif;font-weight:800;font-size:1.25rem;color:#fff;">3</div>
+          <h3 style="font-family:'Syne',sans-serif;font-weight:700;font-size:1.25rem;letter-spacing:-0.02em;margin-bottom:0.75rem;">Listo. Cubierto.</h3>
+          <p style="font-size:0.875rem;color:var(--color-text-muted);line-height:1.6;">Tu póliza digital está activa en minutos. Gestiona, reporta siniestros y renueva todo desde la app.</p>
+        </div>
+      </div>
+
+      <!-- Differentiators -->
+      <div style="margin-top:4rem;">
+        <h3 class="fade-up" style="font-family:'Syne',sans-serif;font-weight:700;font-size:1.75rem;letter-spacing:-0.02em;margin-bottom:1.5rem;text-align:center;">¿Por qué Verismart gana?</h3>
+        <div class="diff-grid stagger-group">
+          <div class="diff-card stagger-item">
+            <div class="diff-card__icon">🧠</div>
+            <div>
+              <div class="diff-card__title">IA que te recomienda</div>
+              <div class="diff-card__desc">Nuestro motor analiza tu perfil y sugiere el plan exacto, sin sobrecoberturas ni brechas.</div>
+            </div>
+          </div>
+          <div class="diff-card stagger-item">
+            <div class="diff-card__icon">⚡</div>
+            <div>
+              <div class="diff-card__title">Siniestros en 24h</div>
+              <div class="diff-card__desc">Reporta con fotos desde la app. El 80% de los casos se aprueba en menos de un día.</div>
+            </div>
+          </div>
+          <div class="diff-card stagger-item">
+            <div class="diff-card__icon">💎</div>
+            <div>
+              <div class="diff-card__title">Precio justo garantizado</div>
+              <div class="diff-card__desc">Sin comisiones ocultas ni intermediarios. El ahorro llega directo a tu bolsillo.</div>
+            </div>
+          </div>
+          <div class="diff-card stagger-item">
+            <div class="diff-card__icon">📊</div>
+            <div>
+              <div class="diff-card__title">Todo tu portafolio</div>
+              <div class="diff-card__desc">Importa pólizas existentes de cualquier compañía. Un solo dashboard para toda tu familia.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════════
+       04. SEGMENTOS (PINNED + TABS)
+  ══════════════════════════════════════════════════════════ -->
+  <section id="segments" class="section section--dark">
+    <div class="segments-pin-wrap" style="width:100%;min-height:100vh;display:flex;align-items:center;">
+      <div class="container" style="width:100%;">
+        <div style="text-align:center;margin-bottom:3rem;">
+          <div class="eyebrow">Segmentos</div>
+          <h2 class="display-text" style="font-size:clamp(2rem,4vw,3.5rem);margin-bottom:1rem;">
+            ¿Para quién es <span class="gradient-text">Verismart</span>?
+          </h2>
+        </div>
+
+        <!-- Tabs -->
+        <div style="display:flex;justify-content:center;margin-bottom:2.5rem;">
+          <div class="segment-tabs">
+            <button class="segment-tab active">🚀 Joven Profesional</button>
+            <button class="segment-tab">👨‍👩‍👧 Familia</button>
+            <button class="segment-tab">🏢 PYME</button>
+          </div>
+        </div>
+
+        <!-- Panels -->
+        <div class="segment-panels">
+          <!-- Panel 1: Joven -->
+          <div class="segment-panel active">
+            <div class="segment-panel__info">
+              <div class="segment-panel__age">23–35 años</div>
+              <h3 class="segment-panel__title">El Joven Profesional</h3>
+              <div class="segment-panel__pain">
+                <div class="segment-panel__pain-label">🔴 El dolor</div>
+                <p style="font-size:0.875rem;color:var(--color-text-muted);margin:0;">Nunca tuvo seguro — le parece caro, burocrático y aburrido. No sabe por dónde empezar.</p>
+              </div>
+              <div class="segment-panel__solution">
+                <div class="segment-panel__solution-label">🟢 La solución</div>
+                <p style="font-size:0.875rem;color:var(--color-text-muted);margin:0;">Seguro de auto, bicicleta o renta en 3 clics. Sin papeles, sin llamadas, sin rollos.</p>
+              </div>
+              <div class="segment-panel__features">
+                <div class="segment-panel__feature">Cotización instantánea con IA</div>
+                <div class="segment-panel__feature">Pago mensual sin compromiso</div>
+                <div class="segment-panel__feature">Gestión 100% en la app</div>
+              </div>
+            </div>
+            <div style="display:flex;justify-content:center;">
+              <div class="phone" style="width:200px;height:410px;">
+                <div class="phone__screen">
+                  <div style="padding:50px 12px 12px;height:100%;background:linear-gradient(180deg,#060810,#03071a);font-family:'DM Sans',sans-serif;overflow:hidden;">
+                    <div style="font-family:'Syne',sans-serif;font-weight:800;font-size:15px;color:#eef2fa;margin-bottom:4px;">Tu plan ideal</div>
+                    <div style="font-size:10px;color:#6b7a99;margin-bottom:16px;">Basado en tu perfil · IA</div>
+                    <div style="background:linear-gradient(135deg,#0055ff,#00d4ff);border-radius:12px;padding:14px;margin-bottom:10px;">
+                      <div style="font-size:10px;color:rgba(255,255,255,0.7);margin-bottom:4px;">SEGURO AUTO RECOMENDADO</div>
+                      <div style="font-size:20px;font-weight:800;color:#fff;font-family:'Syne',sans-serif;">$28.990<span style="font-size:11px;opacity:0.7;font-weight:400;">/mes</span></div>
+                      <div style="font-size:9px;color:rgba(255,255,255,0.8);margin-top:8px;">✓ Robo total · ✓ Colisión · ✓ RC</div>
+                    </div>
+                    <div style="background:#0d1228;border:1px solid rgba(0,212,255,0.15);border-radius:10px;padding:10px;margin-bottom:8px;display:flex;justify-content:space-between;align-items:center;">
+                      <div style="font-size:11px;color:#eef2fa;">Plan Básico</div>
+                      <div style="font-size:11px;color:#6b7a99;">$18.990</div>
+                    </div>
+                    <div style="background:#0d1228;border:1px solid rgba(0,232,162,0.2);border-radius:10px;padding:10px;display:flex;justify-content:space-between;align-items:center;">
+                      <div style="font-size:11px;color:#00e8a2;font-weight:600;">Plan Completo ⭐</div>
+                      <div style="font-size:11px;color:#00e8a2;">$28.990</div>
+                    </div>
+                    <div style="margin-top:14px;background:linear-gradient(135deg,#0055ff,#00d4ff);border-radius:10px;padding:12px;text-align:center;font-size:12px;font-weight:600;color:#fff;">Contratar ahora →</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Panel 2: Familia -->
+          <div class="segment-panel">
+            <div class="segment-panel__info">
+              <div class="segment-panel__age">35–50 años</div>
+              <h3 class="segment-panel__title">La Familia Protegida</h3>
+              <div class="segment-panel__pain">
+                <div class="segment-panel__pain-label">🔴 El dolor</div>
+                <p style="font-size:0.875rem;color:var(--color-text-muted);margin:0;">Tiene seguros dispersos en 3 compañías distintas, sin visión unificada ni control real.</p>
+              </div>
+              <div class="segment-panel__solution">
+                <div class="segment-panel__solution-label">🟢 La solución</div>
+                <p style="font-size:0.875rem;color:var(--color-text-muted);margin:0;">Un dashboard familiar centralizado con todos los seguros, vencimientos y coberturas en un vistazo.</p>
+              </div>
+              <div class="segment-panel__features">
+                <div class="segment-panel__feature">Wallet de pólizas unificado</div>
+                <div class="segment-panel__feature">Alertas de vencimiento automáticas</div>
+                <div class="segment-panel__feature">Cobertura para cada miembro</div>
+              </div>
+            </div>
+            <div style="display:flex;justify-content:center;">
+              <div class="phone" style="width:200px;height:410px;">
+                <div class="phone__screen">
+                  <div style="padding:50px 12px 12px;height:100%;background:linear-gradient(180deg,#060810,#03071a);font-family:'DM Sans',sans-serif;overflow:hidden;">
+                    <div style="font-family:'Syne',sans-serif;font-weight:800;font-size:14px;color:#eef2fa;margin-bottom:16px;">👨‍👩‍👧 Familia Morales</div>
+                    <div style="display:flex;flex-direction:column;gap:8px;">
+                      <div style="background:#0d1228;border:1px solid rgba(0,212,255,0.12);border-radius:10px;padding:10px;display:flex;gap:8px;align-items:center;">
+                        <span style="font-size:16px;">🚗</span>
+                        <div style="flex:1;">
+                          <div style="font-size:10px;font-weight:600;color:#eef2fa;">Auto · Catalina</div>
+                          <div style="font-size:9px;color:#6b7a99;">Vence Mar 2025</div>
+                        </div>
+                        <div style="width:8px;height:8px;border-radius:50%;background:#00e8a2;"></div>
+                      </div>
+                      <div style="background:#0d1228;border:1px solid rgba(0,212,255,0.12);border-radius:10px;padding:10px;display:flex;gap:8px;align-items:center;">
+                        <span style="font-size:16px;">🏠</span>
+                        <div style="flex:1;">
+                          <div style="font-size:10px;font-weight:600;color:#eef2fa;">Hogar · Las Condes</div>
+                          <div style="font-size:9px;color:#6b7a99;">Vence Dic 2024</div>
+                        </div>
+                        <div style="width:8px;height:8px;border-radius:50%;background:#ffba3b;"></div>
+                      </div>
+                      <div style="background:#0d1228;border:1px solid rgba(0,212,255,0.12);border-radius:10px;padding:10px;display:flex;gap:8px;align-items:center;">
+                        <span style="font-size:16px;">❤️</span>
+                        <div style="flex:1;">
+                          <div style="font-size:10px;font-weight:600;color:#eef2fa;">Vida · Familia</div>
+                          <div style="font-size:9px;color:#6b7a99;">Vence Jun 2025</div>
+                        </div>
+                        <div style="width:8px;height:8px;border-radius:50%;background:#00e8a2;"></div>
+                      </div>
+                      <div style="background:#0d1228;border:1px solid rgba(0,212,255,0.12);border-radius:10px;padding:10px;display:flex;gap:8px;align-items:center;">
+                        <span style="font-size:16px;">🐾</span>
+                        <div style="flex:1;">
+                          <div style="font-size:10px;font-weight:600;color:#eef2fa;">Mascota · Copito</div>
+                          <div style="font-size:9px;color:#6b7a99;">Vence Ene 2025</div>
+                        </div>
+                        <div style="width:8px;height:8px;border-radius:50%;background:#00e8a2;"></div>
+                      </div>
+                    </div>
+                    <div style="margin-top:12px;text-align:center;font-size:10px;color:#6b7a99;">4 pólizas · $192.000/mes total</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Panel 3: PYME -->
+          <div class="segment-panel">
+            <div class="segment-panel__info">
+              <div class="segment-panel__age">Negocios 5–50 personas</div>
+              <h3 class="segment-panel__title">La PYME que crece</h3>
+              <div class="segment-panel__pain">
+                <div class="segment-panel__pain-label">🔴 El dolor</div>
+                <p style="font-size:0.875rem;color:var(--color-text-muted);margin:0;">Seguros empresariales opacos, lentos y que siempre requieren un corredor de por medio.</p>
+              </div>
+              <div class="segment-panel__solution">
+                <div class="segment-panel__solution-label">🟢 La solución</div>
+                <p style="font-size:0.875rem;color:var(--color-text-muted);margin:0;">Plan empresarial de autoservicio. Asegura a tu equipo y tus activos en el mismo día.</p>
+              </div>
+              <div class="segment-panel__features">
+                <div class="segment-panel__feature">Seguro colectivo de salud</div>
+                <div class="segment-panel__feature">Responsabilidad civil en minutos</div>
+                <div class="segment-panel__feature">Factura electrónica integrada</div>
+              </div>
+            </div>
+            <div style="display:flex;justify-content:center;align-items:center;">
+              <div style="background:var(--color-surface);border:1px solid var(--color-border);border-radius:20px;padding:2rem;width:280px;">
+                <div style="font-family:'Syne',sans-serif;font-weight:700;font-size:14px;color:var(--color-text);margin-bottom:1rem;">🏢 Startup Tech · 12 personas</div>
+                <div style="display:flex;flex-direction:column;gap:0.75rem;">
+                  <div style="display:flex;justify-content:space-between;align-items:center;">
+                    <span style="font-size:12px;color:var(--color-text-muted);">Salud colectivo</span>
+                    <span style="font-size:12px;color:var(--color-success);font-weight:600;">Activo ✓</span>
+                  </div>
+                  <div style="display:flex;justify-content:space-between;align-items:center;">
+                    <span style="font-size:12px;color:var(--color-text-muted);">RC profesional</span>
+                    <span style="font-size:12px;color:var(--color-success);font-weight:600;">Activo ✓</span>
+                  </div>
+                  <div style="display:flex;justify-content:space-between;align-items:center;">
+                    <span style="font-size:12px;color:var(--color-text-muted);">Equipo tecnológico</span>
+                    <span style="font-size:12px;color:var(--color-success);font-weight:600;">Activo ✓</span>
+                  </div>
+                  <div style="height:1px;background:var(--color-border);margin:0.5rem 0;"></div>
+                  <div style="display:flex;justify-content:space-between;align-items:center;">
+                    <span style="font-size:13px;font-weight:600;color:var(--color-text);">Total mensual</span>
+                    <span style="font-size:15px;font-weight:700;color:var(--color-accent);">$284.000</span>
+                  </div>
+                </div>
+                <div style="margin-top:1rem;background:linear-gradient(135deg,#0055ff,#00d4ff);border-radius:10px;padding:10px;text-align:center;font-size:12px;font-weight:600;color:#fff;">Contratado en 8 minutos</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════════
+       05. PRODUCTOS
+  ══════════════════════════════════════════════════════════ -->
+  <section id="products" class="section">
+    <div class="container">
+      <div style="text-align:center;margin-bottom:3rem;">
+        <div class="eyebrow fade-up">Productos</div>
+        <h2 class="display-text fade-up" style="font-size:clamp(2.5rem,5vw,4.5rem);margin-bottom:1rem;">
+          6 seguros.<br/><span class="gradient-text">Un solo lugar.</span>
+        </h2>
+        <p class="lead fade-up" style="margin:0 auto;">Todo lo que necesitas proteger, disponible al instante.</p>
+      </div>
+
+      <div class="products-grid stagger-group">
+        <div class="product-card stagger-item">
+          <div class="product-card__icon">🚗</div>
+          <div class="product-card__name">Auto</div>
+          <div class="product-card__time">⚡ 4 minutos</div>
+          <div class="product-card__price">desde $18.990/mes</div>
+        </div>
+        <div class="product-card stagger-item">
+          <div class="product-card__icon">🏠</div>
+          <div class="product-card__name">Hogar</div>
+          <div class="product-card__time">⚡ 3 minutos</div>
+          <div class="product-card__price">desde $9.990/mes</div>
+        </div>
+        <div class="product-card stagger-item">
+          <div class="product-card__icon">❤️</div>
+          <div class="product-card__name">Vida</div>
+          <div class="product-card__time">⚡ 5 minutos</div>
+          <div class="product-card__price">desde $12.990/mes</div>
+        </div>
+        <div class="product-card stagger-item">
+          <div class="product-card__icon">🏥</div>
+          <div class="product-card__name">Salud</div>
+          <div class="product-card__time">⚡ 6 minutos</div>
+          <div class="product-card__price">desde $29.990/mes</div>
+        </div>
+        <div class="product-card stagger-item">
+          <div class="product-card__icon">🐾</div>
+          <div class="product-card__name">Mascotas</div>
+          <div class="product-card__time">⚡ 2 minutos</div>
+          <div class="product-card__price">desde $4.990/mes</div>
+        </div>
+        <div class="product-card stagger-item">
+          <div class="product-card__icon">✈️</div>
+          <div class="product-card__name">Viaje</div>
+          <div class="product-card__time">⚡ 2 minutos</div>
+          <div class="product-card__price">desde $2.990/viaje</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════════
+       06. KPIs / TRACCIÓN (PINNED)
+  ══════════════════════════════════════════════════════════ -->
+  <section id="kpis" class="section section--dark" style="min-height:100vh;">
+    <div class="container" style="width:100%;">
+      <div style="text-align:center;margin-bottom:3rem;">
+        <div class="eyebrow">Tracción</div>
+        <h2 class="display-text" style="font-size:clamp(2.5rem,5vw,4.5rem);margin-bottom:1rem;">
+          Los números <span class="gradient-text">hablan.</span>
+        </h2>
+        <p style="color:var(--color-text-muted);font-size:1rem;">Resultados de los primeros 12 meses de operación.</p>
+      </div>
+
+      <div class="kpi-grid">
+        <div class="kpi-card">
+          <div class="kpi-card__icon">🌎</div>
+          <div class="kpi-card__label">Mercado sin seguro · Chile</div>
+          <div class="kpi-card__value">
+            <span data-count="18" data-suffix="M+" data-duration="2.5">0</span>
+          </div>
+          <div class="kpi-card__sub">personas sin cobertura</div>
+        </div>
+
+        <div class="kpi-card">
+          <div class="kpi-card__icon">⚡</div>
+          <div class="kpi-card__label">Tiempo para contratar</div>
+          <div class="kpi-card__value">
+            <span data-count="3" data-suffix=" min" data-duration="1.5">0</span>
+          </div>
+          <div class="kpi-card__sub">promedio de onboarding</div>
+        </div>
+
+        <div class="kpi-card">
+          <div class="kpi-card__icon">⭐</div>
+          <div class="kpi-card__label">Satisfacción siniestros</div>
+          <div class="kpi-card__value">
+            <span data-count="97" data-suffix="%" data-duration="2">0</span>
+          </div>
+          <div class="kpi-card__sub">NPS de 68 en beta</div>
+        </div>
+
+        <div class="kpi-card">
+          <div class="kpi-card__icon">💰</div>
+          <div class="kpi-card__label">Ahorro vs. tradicional</div>
+          <div class="kpi-card__value">
+            <span data-count="40" data-suffix="%" data-duration="2">0</span>
+          </div>
+          <div class="kpi-card__sub">en canales directos</div>
+        </div>
+
+        <div class="kpi-card">
+          <div class="kpi-card__icon">📲</div>
+          <div class="kpi-card__label">Descargas (beta)</div>
+          <div class="kpi-card__value">
+            <span data-count="3150" data-suffix="+" data-duration="2.5">0</span>
+          </div>
+          <div class="kpi-card__sub">sin marketing pagado</div>
+        </div>
+
+        <div class="kpi-card">
+          <div class="kpi-card__icon">📋</div>
+          <div class="kpi-card__label">Pólizas activas</div>
+          <div class="kpi-card__value">
+            <span data-count="1560" data-suffix="+" data-duration="2.5">0</span>
+          </div>
+          <div class="kpi-card__sub">en primeros 12 meses</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════════
+       07. CRECIMIENTO (CHART.JS)
+  ══════════════════════════════════════════════════════════ -->
+  <section id="growth" class="section">
+    <div class="container">
+      <div class="grid-2" style="gap:4rem;align-items:start;">
+        <div>
+          <div class="eyebrow fade-up">Crecimiento</div>
+          <h2 class="display-text fade-up" style="font-size:clamp(2rem,4vw,3.5rem);margin-bottom:1.5rem;">
+            Tracción<br/><span class="gradient-text">orgánica.</span>
+          </h2>
+          <p class="fade-up" style="color:var(--color-text-muted);font-size:1rem;line-height:1.7;margin-bottom:2rem;">
+            Crecimiento de 26x en 12 meses sin inversión en publicidad pagada.
+            Solo boca a boca y ASO.
+          </p>
+
+          <div style="display:flex;flex-direction:column;gap:1rem;">
+            <div class="highlight-box" style="padding:1.25rem 1.5rem;display:flex;align-items:center;gap:1rem;">
+              <div style="font-size:2rem;">📈</div>
+              <div>
+                <div style="font-family:'JetBrains Mono',monospace;font-size:0.75rem;color:var(--color-accent);letter-spacing:0.08em;text-transform:uppercase;margin-bottom:4px;">MoM Growth</div>
+                <div style="font-family:'Syne',sans-serif;font-size:1.75rem;font-weight:800;letter-spacing:-0.02em;">+18%</div>
+              </div>
+            </div>
+            <div class="highlight-box" style="padding:1.25rem 1.5rem;display:flex;align-items:center;gap:1rem;">
+              <div style="font-size:2rem;">🔁</div>
+              <div>
+                <div style="font-family:'JetBrains Mono',monospace;font-size:0.75rem;color:var(--color-accent);letter-spacing:0.08em;text-transform:uppercase;margin-bottom:4px;">Retención 6 meses</div>
+                <div style="font-family:'Syne',sans-serif;font-size:1.75rem;font-weight:800;letter-spacing:-0.02em;">84%</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="chart-wrap fade-up">
+          <canvas id="growth-chart" height="300"></canvas>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════════
+       08. MODELO DE NEGOCIO
+  ══════════════════════════════════════════════════════════ -->
+  <section id="model" class="section section--dark">
+    <div class="container">
+      <div style="text-align:center;margin-bottom:3rem;">
+        <div class="eyebrow fade-up">Modelo de negocio</div>
+        <h2 class="display-text fade-up" style="font-size:clamp(2.5rem,5vw,4rem);margin-bottom:1rem;">
+          Ingresos <span class="gradient-text">diversificados.</span>
+        </h2>
+      </div>
+
+      <div class="stagger-group" style="display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;">
+        <div class="stagger-item card" style="text-align:center;">
+          <div style="font-size:2.5rem;margin-bottom:1rem;">💸</div>
+          <h3 style="font-family:'Syne',sans-serif;font-weight:700;font-size:1.25rem;letter-spacing:-0.02em;margin-bottom:0.75rem;">Comisión por venta</h3>
+          <div style="font-family:'JetBrains Mono',monospace;font-size:1.5rem;font-weight:700;color:var(--color-accent);margin-bottom:0.75rem;">8–15%</div>
+          <p style="font-size:0.875rem;color:var(--color-text-muted);">Por cada póliza vendida, recibimos comisión de la aseguradora. Alineados con el cliente.</p>
+        </div>
+        <div class="stagger-item card" style="text-align:center;">
+          <div style="font-size:2.5rem;margin-bottom:1rem;">🏢</div>
+          <h3 style="font-family:'Syne',sans-serif;font-weight:700;font-size:1.25rem;letter-spacing:-0.02em;margin-bottom:0.75rem;">SaaS Empresarial</h3>
+          <div style="font-family:'JetBrains Mono',monospace;font-size:1.5rem;font-weight:700;color:var(--color-accent);margin-bottom:0.75rem;">$49k/año</div>
+          <p style="font-size:0.875rem;color:var(--color-text-muted);">Plan B2B para empresas que quieren gestionar el portafolio de seguros de sus empleados.</p>
+        </div>
+        <div class="stagger-item card" style="text-align:center;">
+          <div style="font-size:2.5rem;margin-bottom:1rem;">🔗</div>
+          <h3 style="font-family:'Syne',sans-serif;font-weight:700;font-size:1.25rem;letter-spacing:-0.02em;margin-bottom:0.75rem;">API & Embedded</h3>
+          <div style="font-family:'JetBrains Mono',monospace;font-size:1.5rem;font-weight:700;color:var(--color-accent);margin-bottom:0.75rem;">Rev-share</div>
+          <p style="font-size:0.875rem;color:var(--color-text-muted);">Incrustamos seguros en apps de terceros (fintechs, marketplaces, e-commerce) con API nativa.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════════
+       09. EQUIPO
+  ══════════════════════════════════════════════════════════ -->
+  <section id="team" class="section">
+    <div class="container">
+      <div style="text-align:center;margin-bottom:3rem;">
+        <div class="eyebrow fade-up">Equipo</div>
+        <h2 class="display-text fade-up" style="font-size:clamp(2.5rem,5vw,4rem);margin-bottom:1rem;">
+          El equipo que lo<br/><span class="gradient-text">hace posible.</span>
+        </h2>
+        <p class="lead fade-up" style="margin:0 auto;">Experiencia en seguros, tecnología, growth y finanzas. Esto no es un primer intento.</p>
+      </div>
+
+      <div class="team-grid stagger-group">
+        <div class="team-card stagger-item">
+          <div class="team-card__avatar">CM</div>
+          <div class="team-card__name">Catalina Morales</div>
+          <div class="team-card__role">CEO & Co-Fundadora</div>
+          <div class="team-card__bg">Ex Seguros BCI · Harvard MBA</div>
+        </div>
+        <div class="team-card stagger-item">
+          <div class="team-card__avatar">AF</div>
+          <div class="team-card__name">Andrés Fuentes</div>
+          <div class="team-card__role">CTO & Co-Fundador</div>
+          <div class="team-card__bg">Ex Cornershop · Stanford CS</div>
+        </div>
+        <div class="team-card stagger-item">
+          <div class="team-card__avatar">VR</div>
+          <div class="team-card__name">Valentina Ríos</div>
+          <div class="team-card__role">CPO</div>
+          <div class="team-card__bg">Ex Buk · Growth Product</div>
+        </div>
+        <div class="team-card stagger-item">
+          <div class="team-card__avatar">FD</div>
+          <div class="team-card__name">Felipe Donoso</div>
+          <div class="team-card__role">CFO</div>
+          <div class="team-card__bg">Ex Betterfly · Fintech</div>
+        </div>
+      </div>
+
+      <!-- Advisors note -->
+      <div style="margin-top:2rem;text-align:center;">
+        <div class="chip chip--accent">
+          <span>+</span> Advisors: Ex-VP Sura, Ex-CTO Betterfly, Partner a/sixteen
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════════
+       10. LEVANTAMIENTO
+  ══════════════════════════════════════════════════════════ -->
+  <section id="raise" class="section section--dark">
+    <div class="container">
+      <div class="grid-2" style="gap:4rem;align-items:center;">
+        <div>
+          <div class="eyebrow fade-up">Levantamiento</div>
+          <div class="raise-amount fade-up">USD 2.5M</div>
+          <div style="margin-top:1rem;margin-bottom:2rem;">
+            <span class="chip chip--accent">Pre-Seed Round</span>
+          </div>
+          <p class="fade-up" style="color:var(--color-text-muted);font-size:1rem;line-height:1.7;margin-bottom:2.5rem;">
+            Buscamos socios que entiendan que los seguros en Latinoamérica están broken
+            y que la tecnología puede hacer que la protección sea accesible para todos.
+          </p>
+
+          <div class="raise-bars">
+            <div class="raise-bar">
+              <div class="raise-bar__header">
+                <span class="raise-bar__label">Producto & Tecnología</span>
+                <span class="raise-bar__pct">40%</span>
+              </div>
+              <div class="raise-bar__track">
+                <div class="raise-bar__fill" style="width:40%;background:#0066ff;"></div>
+              </div>
+            </div>
+            <div class="raise-bar">
+              <div class="raise-bar__header">
+                <span class="raise-bar__label">Crecimiento & Marketing</span>
+                <span class="raise-bar__pct">30%</span>
+              </div>
+              <div class="raise-bar__track">
+                <div class="raise-bar__fill" style="width:30%;background:#00d4ff;"></div>
+              </div>
+            </div>
+            <div class="raise-bar">
+              <div class="raise-bar__header">
+                <span class="raise-bar__label">Equipo</span>
+                <span class="raise-bar__pct">20%</span>
+              </div>
+              <div class="raise-bar__track">
+                <div class="raise-bar__fill" style="width:20%;background:#00e896;"></div>
+              </div>
+            </div>
+            <div class="raise-bar">
+              <div class="raise-bar__header">
+                <span class="raise-bar__label">Regulatorio & Legal</span>
+                <span class="raise-bar__pct">10%</span>
+              </div>
+              <div class="raise-bar__track">
+                <div class="raise-bar__fill" style="width:10%;background:#ffb347;"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <h3 class="fade-up" style="font-family:'Syne',sans-serif;font-weight:700;font-size:1.5rem;letter-spacing:-0.02em;margin-bottom:1.5rem;">¿Qué logramos con esto?</h3>
+          <div style="display:flex;flex-direction:column;gap:1rem;">
+            <div class="highlight-box fade-up" style="padding:1.25rem 1.5rem;display:flex;align-items:center;gap:1rem;">
+              <span style="font-size:1.75rem;">🚀</span>
+              <div>
+                <div style="font-weight:600;margin-bottom:4px;">Lanzamiento nacional Chile</div>
+                <div style="font-size:0.875rem;color:var(--color-text-muted);">iOS + Android con todos los productos disponibles</div>
+              </div>
+            </div>
+            <div class="highlight-box fade-up" style="padding:1.25rem 1.5rem;display:flex;align-items:center;gap:1rem;">
+              <span style="font-size:1.75rem;">🌎</span>
+              <div>
+                <div style="font-weight:600;margin-bottom:4px;">Expansión a Colombia y Perú</div>
+                <div style="font-size:0.875rem;color:var(--color-text-muted);">Mes 18 — mercados equivalentes a Chile x5</div>
+              </div>
+            </div>
+            <div class="highlight-box fade-up" style="padding:1.25rem 1.5rem;display:flex;align-items:center;gap:1rem;">
+              <span style="font-size:1.75rem;">📋</span>
+              <div>
+                <div style="font-weight:600;margin-bottom:4px;">50.000 pólizas activas</div>
+                <div style="font-size:0.875rem;color:var(--color-text-muted);">Meta a 24 meses — runway para Serie A</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════════
+       11. CLOSING (PINNED)
+  ══════════════════════════════════════════════════════════ -->
+  <section id="closing" class="section closing" style="min-height:100vh;">
+    <div class="container" style="text-align:center;width:100%;">
+      <div class="closing__logo display-text gradient-text">Verismart</div>
+
+      <p class="closing__cta fade-up" style="margin:2rem auto 3rem;">
+        El seguro que sí entiende tu vida está aquí.<br/>
+        Ayúdanos a que llegue a los millones que lo necesitan.
+      </p>
+
+      <div class="closing__contact fade-up" style="display:flex;flex-direction:column;align-items:center;gap:1.5rem;">
+        <div style="display:flex;gap:1rem;flex-wrap:wrap;justify-content:center;">
+          <a href="mailto:hola@verismart.cl" class="btn btn--primary" style="font-size:1rem;padding:0.875rem 2rem;">
+            📧 hola@verismart.cl
+          </a>
+          <a href="https://verismart.cl" class="btn btn--ghost" style="font-size:1rem;padding:0.875rem 2rem;">
+            🌐 verismart.cl
+          </a>
+        </div>
+
+        <div style="display:flex;gap:2rem;margin-top:1rem;">
+          <div class="chip chip--accent">Catalina Morales · CEO</div>
+          <div class="chip" style="color:var(--color-text-muted);">+56 9 9999 9999</div>
+        </div>
+      </div>
+
+      <!-- Footer -->
+      <div style="margin-top:6rem;padding-top:2rem;border-top:1px solid var(--color-border);">
+        <div style="font-family:'JetBrains Mono',monospace;font-size:0.7rem;color:var(--color-text-dim);letter-spacing:0.08em;">
+          VERISMART · INSURTECH · SANTIAGO, CHILE · 2024
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── SCRIPTS ───────────────────────────────────────────────── -->
+  <!-- GSAP + ScrollTrigger -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <!-- Chart.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+  <!-- Shared core -->
+  <script src="../../shared/js/core.js"></script>
+  <!-- Brand logic -->
+  <script src="js/main.js"></script>
+
+</body>
+</html>
